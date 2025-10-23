@@ -48,7 +48,7 @@ Gather observations related to how you want to help. Look for patterns in respon
 Emotional points are powerful motivators you can tap into making the app useful and compelling.  
 
 #### Step 1 
-Talk to more people who might use the app your designing. Ask open-ended questions about their needs, goals and experiences. Not just what they say, how they say it.  
+Talk to more people who might use the app you’re designing. Ask open-ended questions about their needs, goals and experiences. Not just what they say, how they say it.  
 "What would you like this activity to feel like?"  
 "Tell me about other tools you used in the past to help."  
 
@@ -91,7 +91,7 @@ Write down every feature.
 #### Step 2
 Choose essential features and set the rest aside.  
 Example:  
-For an app that encourages a habit of being grateful one feature that is critical might be adding an entry — details about a time the user felt greatful.
+For an app that encourages a habit of being grateful one feature that is critical might be adding an entry — details about a time the user felt grateful.
 
 #### Step 3
 For each essential feature, write ideas for how to bring it into the app.
@@ -104,7 +104,7 @@ People want to move through the app with confidence that features would be in lo
 Group related features together. Think in terms of spaces or sections. 
 
 #### Step 1
-List essential features (physical or digital notes). Include actions or elments of each on its note.  
+List essential features (physical or digital notes). Include actions or elements of each on its note.  
 (You should be able to move them around).
 
 #### Step 2 
@@ -157,7 +157,7 @@ This creates a strong foundation for the design.
 
 ### Topics and skills covered 
 * Identifying opportunities and defining a clear purpose
-* Talking to people and identifying behaviour patterns
+* Talking to people and identifying behavior patterns
 * Refining an idea focusing on essential features
 * Organizing features into logical screen groups
 * Structuring the app using tab bar and toolbars
@@ -167,10 +167,107 @@ This creates a strong foundation for the design.
 
 ### Extend your design
 1. Show sketches to someone and ask what they expect the screen to do. Attention to where your intentions need clarification. 
-2. Revisit navigation structure. Anything redundant, unnecessary? Try combining and removing items, see how it changes overall experience, does it still works?
+2. Revisit navigation structure. Anything redundant, unnecessary? Try combining and removing items, see how it changes overall experience, does it still work?
 
 ### Challenge yourself 
 Add more ideas. Sketch additional screens, alternate versions of the main screen or flows for onboarding, confirmation, error states. Consider edge cases. 
 
 ### Learn more
-Explore [Designing for iOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios/) (From Human Interface Guidelines) to deepen understanding of navigation, layout, and structure. 
+Explore [Designing for iOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios/) (From Human Interface Guidelines) to deepen understanding of navigation, layout, and structure.  
+
+--- 
+
+# Prototypes - Build an interactive prototype
+Build a prototype with navigation.
+
+## Section 1 - Create higher-fidelity screen prototypes
+Use SF Pro font and iOS resources to build prototypes that look like iOS screens.
+
+#### Step 1
+Download [design resources](https://developer.apple.com/design/resources/#ios-apps).
+
+#### Step 2
+Open and explore resources. Look for what matches the elements in your screen sketches.
+
+#### Step 3
+Download [SF Pro font](https://developer.apple.com/design/resources/#fonts)
+
+#### Step 4 
+Re-create sketches.  
+Choose components that closely match your sketches.
+
+## Section 2 - Connect the flow
+Link screens to test how people move through the app.
+
+#### Step 1
+Connect screens with clickable links.  
+You might find some rework is needed. Iteration is essential.
+
+#### Step 2
+Click through the path to complete essential tasks as a first-time visitor. Notice the flow. What feels natural, what feels unclear.
+
+![iteractive-prototype](./assets/figma-interactive-prototype.png)
+
+## Section 3 - Add just enough interaction
+Add visual effects to mimic key OS behaviors.  
+It doesn't need every gesture/animation. Focus on the essentials: clickable buttons, screen transitions, app navigation. 
+
+#### Step 1
+Choose one key transition in your flow (such as moving from the main screen to a modal for adding content).  
+[Modals](https://developer.apple.com/design/human-interface-guidelines/modality) present content that requires action from the person. Common tasks: confirming an action, and adding content.  
+
+#### Step 2
+Use a simple animation in the design tool, like a slide or fade, to signal change.  
+(Modals slide up from the bottom of the screen).
+
+#### Step 3
+Preview interaction and verify if it improves orientation or creates confusion. Repeat for key transitions.
+
+## Section 4 - Test it
+Work through essential tasks on the app individually. Notice moments of hesitation. Small pauses may signal design issues.   
+Ask yourself:  
+* Do I know where I am? 
+* Do I know what I can do?
+* Do I know where to go next? 
+
+Refine design and prototype until ready to begin testing it with other people. 
+
+Animations and transitions can help people stay oriented. They can also be distracting. By focusing on only the essentials you can get better testing experience without extra work.
+
+# Prototypes - Wrap-up: Prototypes
+Prototypes move from abstract ideas to something concrete people can test.  
+
+## Use high-fidelity resources
+Help create a prototype that feels like the finished app.
+
+### Topics and skills covered
+* Exploring standard components in the iOS framework
+* Using SF Pro font
+* Connecting a feature flow by linking sketches
+* Walking through the flow created to detect points of friction
+* Adding essential transitions
+
+## Continue practicing
+
+### Extend your design
+1. Share prototype with others.
+2. Test on device. Notice difference between mouse and finger. Are elements large enough? 
+
+### Challenge yourself
+Use [SF Symbols](https://developer.apple.com/design/resources/#tools). Check symbols. Use them to add clarity.
+
+### Learn more
+* Read [Discussion of modality for iOS](https://developer.apple.com/design/human-interface-guidelines/modality) in HIG.
+
+---
+---
+
+_Updated: Oct 21, Session 1 (50min total study)_  
+_Updated: Oct 22, Session 2 (100min total study)_  
+_Updated: Oct 23, Session 3 (200min total study)_  
+
+| Date       | Session | Duration | Cumulative | Focus Area |
+|-------------|----------|-----------|-------------|-------------|
+| Oct 21 | 1 | 50min | 50min | App Design – Discovery |
+| Oct 22 | 2 | 50min | 100min | Organizing Features & Navigation |
+| Oct 23 | 3 | 100min | 200min | Prototyping & Flow Testing |
