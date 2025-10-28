@@ -18,9 +18,9 @@
 
 ![app-design-cycle](./assets/app-design--design-cycle.png)
 
-[Discovery](#discovery---ask-questions): talk to people to understand the problem. Ideas based on user feedback. Organize features into simple sketches.  
-**Prototypes**: simple, testable versions. Often with no code. Interactive screens (more complex than sketches, less than full app). Used to explore different approaches.  
-**Validation**: test with users to validate work and check if solves the problem. Observe interaction with the product, interpret the results to determine features that need rework.  
+[**Discovery**](#discovery---ask-questions): talk to people to understand the problem. Ideas based on user feedback. Organize features into simple sketches.  
+[**Prototypes**](#prototypes---build-an-interactive-prototype): simple, testable versions. Often with no code. Interactive screens (more complex than sketches, less than full app). Used to explore different approaches.  
+[**Validation**](#testing-and-validation---test-your-app): test with users to validate work and check if solves the problem. Observe interaction with the product, interpret the results to determine features that need rework.  
 **Iteration**: Take insights and refine ideas and prototypes.  
 
 ---
@@ -260,14 +260,196 @@ Use [SF Symbols](https://developer.apple.com/design/resources/#tools). Check sym
 * Read [Discussion of modality for iOS](https://developer.apple.com/design/human-interface-guidelines/modality) in HIG.
 
 ---
----
 
-_Updated: Oct 21, Session 1 (50min total study)_  
-_Updated: Oct 22, Session 2 (100min total study)_  
-_Updated: Oct 23, Session 3 (200min total study)_  
+# Testing and validation - Test your app
+Ask people to complete a task in the prototype. Plan testing session. Observe interaction. Ask questions. Check assumptions.
 
-| Date       | Session | Duration | Cumulative | Focus Area |
-|-------------|----------|-----------|-------------|-------------|
-| Oct 21 | 1 | 50min | 50min | App Design – Discovery |
-| Oct 22 | 2 | 50min | 100min | Organizing Features & Navigation |
-| Oct 23 | 3 | 100min | 200min | Prototyping & Flow Testing |
+## Focus your test
+Start with the most essential functionality, then identify the necessary steps to use that feature.
+
+Example:  
+In a gratitude app, the essential feature is recording a moment of gratitude. Steps:
+1. Tap the + button.
+2. Add short text (title).
+3. Optionally include notes or a photo.
+4. Save the entry.
+5. See the new entry in the list.
+
+Narrow the scope of testing to a single essential feature to focus on what really matters. 
+
+## Identify the steps to use the feature
+Write everything someone needs to do to use the selected feature.
+* Where do they start? 
+* What specific tasks/actions do they need to take? What happens in the app at each step?
+* What should happen at the end?
+
+Example:   
+To record a moment of gratitude, the user starts on the main screen (1). Tap + button in toolbar, opening a modal with entry fields (2). After entering their information, then they tap Save in the toolbar and return to main screen, where new entry appears in the list (3). 
+
+![journey](./assets/testing_article_journey-map@2x.png)
+
+A detailed task list makes it easier to spot any errors or unclear areas. 
+
+## Plan test sessions
+The structure of test sessions is just as important as defining what to test.
+* **Where will the test take place?** In person or virtually, choose what works best for everyone.
+* **How long will it take?** Short. 10 min or less. Makes recruiting easier and help testers feel at ease. 
+* **How will you capture what happens?** Record people's interactions with your prototype to review details later. With permission, use phone or screen recorder. 
+* **Who will take notes?** Have a third person take notes to focus on running the test.
+
+Sessions should run smoothly and consistently from one tester to the next. Use feedback to refine design. 
+
+## Write a test script
+To keep test sessions consistent use a script. Write prompts on what to say before, during, and after a task.  
+Before showing the prototype and explaining the task, tell there is no wrong answers and that their feedback directly shapes the app.  
+Plan how to introduce the app idea, prototype, and task. Don't tell how. Ask open-ended questions, such as "What do you think this will do?" or "How would you accomplish this task?"  
+
+Example:  
+To test adding an entry, show the main screen with the + button and ask "Looking at this screen, what do you think this plus button does?" After recording their answer, say, "Please try to add an entry to the list on this screen."
+
+Observe carefully, without giving additional instructions. Do they hesitate, or complete the task smoothly?  
+After they complete the task, ask questions such as "How did you feel about that process?" and "Did you find anything confusing?"  
+Use the script to plan a mix of doing and reflecting, getting insight into both behavior and emotion.  
+
+## Learn from friction
+Expect people won't complete the task smoothly or confidently. Moments of hesitation or wrong taps often provide the most valuable feedback. Avoid jumping in. Keep asking open-ended questions, such as "What do you expect will happen if you tap that?"  
+
+Example:  
+If a modal uses a save icon, someone might add an entry and assume they can edit it to make changes. If the app doesn't support editing, it creates a confusion. In this case a checkmark icon may be a better choice. 
+
+Frustrations and mistakes people make reveal design refinement points. Those insights become the compass for improvement. Clearer icons, flexible input, smoother flow, another change, testing helps you see how to refine your design.  
+
+# Testing and validation - Validate your app 
+Turn feedback into insights. Use insights to refine design. 
+
+Organize raw feedback — observations, quotes, and recordings. Capture it in small notes. Sort and compare notes to decide what to do next. 
+
+## Break your feedback into simple notes
+In the review focus on where people struggled or their expectations didn't match design assumptions. Capture each issue on physical or digital note, one idea per note. 
+
+Focus on what happened and what people said. 
+
+## Form key insights
+Look for patterns. Move notes and group similar themes.   
+Notice details like a confusing button or required entry field that feels restrictive.  
+People may be unsure whether new content actually saved. They might run into usability issues, keyboard covering content is common.  
+
+Sort and group until clear patterns emerge. 
+
+## Draw conclusions
+For each pattern, ask, "Why did this happen?". Keep asking why to get to the root cause.  
+Example:  
+* People unsure whether content was added. Why?
+* They couldn't see the new content onscreen right away. Why?
+
+* Saving the data entry returns to data entry form, not main screen. 
+
+Other examples: 
+1. People associate the button icon with different action.  
+2. People want entries with the fewest required steps.  
+3. Saving the data entry field returns them to the data entry form, not to the main screen. 
+4. Text input blocked by keyboard.
+
+Address fixes later. Clearly define what's happening first. Insights not solutions. Understanding what works, what doesn't, and, most importantly, why.
+
+## Organize conclusions by theme
+Label root causes with broader categories.  
+Example:  
+1. Interface: Button icon associated with different action. 
+2. Flow: People want to add entries with the least number of required steps.
+3. Navigation: Saving the data entry field returns the to the data entry form, not to the main screen. 
+4. Usability: The text input field is blocked by the keyboard. 
+
+## Decide what to revisit 
+Turn insights into solutions. Identify phases of the design cycle to revisit as you iterate and refine the app design. Plan to test again after changes to confirm refinements addressed the problems identified.  
+Example:  
+1. Replace save icon with checkmark icon. (Return to prototyping, then testing.)
+2. Explore a "Quick Add" photo-only option. (Return to discovery, then testing.)
+3. Add a success state after saving. (Return to prototyping, then testing.)
+4. Adjust text input placement and screen scroll behavior. (Return to prototyping, then testing.)
+
+Linking conclusions back to a design phase keeps iteration structured instead of reactive. 
+
+# Testing and validation - Wrap up: Testing and validation
+Identify key task to test, plan sessions, observe how people use prototype to spot friction. Analyse the results to find opportunities to improve app functions.
+
+## Define your test to capture insights
+Focus on sinle essetial task helps get the most from testing with people. Ask open-ended questions. Find signs of friction. Refine app design. 
+
+### Topics and skills covered
+* Defining testing goals by focusing on actions that matter most
+* Creating a journey map to orient everyone involved in the test process
+* Writing a test script to keep consistency in sessions and limit variables.
+* Paying attention to friction in the flow.
+* Noticing themes by grouping similar comments together.
+* Finding root causes in patterns from testing comments. Organizing them into themes
+* Making a plan to put findings into action. 
+
+## Continue practicing
+
+### Extend your design
+1. If testing doesn't produce actionable insights, try again. Restructure our test to get the inut you need to improve. 
+2. Testing takes many forms. Short, informal sessions can provide different insights than longer, structured ones. Compare approaches results. What can you learn from each?
+
+### Challenge yourself
+Consider your test setting. The environment can affect peoples behavior. Choose setting based on app and test needed.
+
+### Learn more
+Use welcoming language in app during testing. [Inclusive language and features for iOS](https://developer.apple.com/design/human-interface-guidelines/inclusion)
+
+--- 
+
+# Iteration - Iterate on your design
+Refine design systematically. Anchor every change to esign principles and discovery findings. Prototype, test and validate experiences.
+
+## About iteration
+It means repeating phases of the design cycle as many times as you need. Incorporate user feedback and improve your app with every interation.  
+
+## Create visual consistency with system tools
+Consistent visual elements make an app feel polished.
+
+### Fonts and symbols
+SF Pro is the system font. Designed for legibility at various screen sizes. SF Symbols provide icons that reduce ambiguity.  
+
+### Consider accessibility
+[Dynamic Type](https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type) lets people adjust text size to ensure redability and comfort.  
+Built-in styles (title, body, caption...) automatically adapt to Dynamic Type and other accessibility settings. 
+
+### Use colors that adapt
+[Color](https://developer.apple.com/design/human-interface-guidelines/color) is important in accessibility. Use system colors to automatically adapt to light and dark modes.  
+System colors also ensure text and other elements are legible across different environments.
+
+## Use insights to refine your design
+Apply insights from testing and validation. Reduce confusion, meet people's expectations, and reduce friction.  
+
+## Incorporate custom elements with care
+One goal of the example app (gratitude app) is to evoke the feeling of being on a journey. Good app design connects structure to feeling. The list entries mimics a path of stepping stones, so each entry feels like a step in a larger journey.  
+
+![custom-elements](./assets/iterate_article_custom-component@2x.png)  
+
+This ties the app's emotional intent with the interface: helping people treat moments of gratitude as meaningful steps.  
+It comes with tradeoffs: Using an hexagon you need to ensure text and container scale correctly with larger sizes using Dynamic Type. Built-in views handle that automatically.  
+Iteration is about testing, refining, and testing again. Using system resources, like fonts colors, and icons, helps spend less time on reinventing patterns and more on emotional details that make the app resonate.  
+
+# Iteration - Wrap-up: Iteration
+App appearance and behavior is refined based on user testing information.  
+
+## Moving forward and looking back
+### Topics and skills covered
+* Using feedback to iterate and improve design
+* Creating visual consistency using a cohesive design system
+* The importance of typography in creating an inclusive experience
+* Applying colors that ensure contrast and legibility
+* The rhythm of testing, refining, and testing again
+
+## Continue pacticing
+### Extend your design
+1. With the new understanding of colors, explore a palette that changes the expression or character of the app.  
+2. Continue to explore changes that might reduce friction discovered in testing.  
+
+### Challenge yourself
+Design for a different purpose. Design an app with similar theme but different purpose. Instead of a gratitude habit, focus on staying connected with friends or keeping your space tidy. Consider design changes in terms of features, hierarchy, and navigation to serve the new purpose.  
+Explore custom symbols. Combine two or more SF Symbols to create a custom symbol.  
+
+### Learn more
+* Explore the [accessibility information](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the HIG, especially the Vision section about text sizes and color. 
